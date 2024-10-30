@@ -68,6 +68,7 @@
         .portfolio-item {
             width: 100%;
             max-width: 400px;
+            aspect-ratio: 768 / 1280;
             overflow: hidden;
             position: relative;
             transition: transform 0.3s;
@@ -79,23 +80,35 @@
             transform: scale(1.05);
         }
 
-        .portfolio-item img {
+        /* Video styling */
+        .portfolio-item video {
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
-            aspect-ratio: 3 / 4; /* 세로 비율을 길게 설정 */
-            display: block;
+            border-radius: 8px;
         }
 
+        /* Image styling */
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Button styling */
         .portfolio-content {
-            padding: 15px;
-            background-color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for visibility */
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
         }
 
         .portfolio-content a {
             display: inline-block;
-            margin-top: 5px;
             padding: 8px 16px;
             background-color: #e74c3c;
             color: #fff;
@@ -125,13 +138,13 @@
         /* Responsive Adjustments for Mobile */
         @media (max-width: 768px) {
             .portfolio-container {
-                grid-template-columns: repeat(2, 1fr); /* 모바일에서 2열로 */
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
-<body>
 
+<body>
     <!-- Header -->
     <header>
         <h1>NV디자인 Sample</h1>
@@ -145,75 +158,72 @@
             * 움짤은 추가비용 발생 할 수 있습니다. 별도 문의주세요
         </div>
         <div class="portfolio-container">
-            <!-- Portfolio Item 1 with Red Box Number and no title above button -->
+            <!-- Portfolio Items 1 to 9 with videos -->
             <div class="portfolio-item">
                 <div class="number-box">1번</div>
-                <img src="http://harrange.negagea.kr/nvdesign/title.gif" alt="Portfolio Image 1">
+                <video src="https://hc3202.cafe24.com/hc3202_2b2a55afeecdd6846fc55798f83c3895_SD.mp4" autoplay loop muted playsinline></video>
                 <div class="portfolio-content">
                     <a href="portfolio1.html" target="_blank">자세히 보기</a>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="number-box">2번</div>
-                <img src="http://harrange.negagea.kr/nvdesign/massage1.gif" alt="Portfolio Image 2">
+                <video src="https://hc3202.cafe24.com/hc3202_817ccc6f349d3be5371d504dcc355494_SD.mp4" autoplay loop muted playsinline></video>
                 <div class="portfolio-content">
                     <a href="portfolio2.html" target="_blank">자세히 보기</a>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="number-box">3번</div>
-                <img src="http://harrange.negagea.kr/nvdesign/massage2.gif" alt="Portfolio Image 3">
+                <video src="https://hc3202.cafe24.com/hc3202_b88b6533ee9c520d93eab15af2475784_SD.mp4" autoplay loop muted playsinline></video>
                 <div class="portfolio-content">
                     <a href="portfolio3.html" target="_blank">자세히 보기</a>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="number-box">4번</div>
-                <img src="http://harrange.negagea.kr/nvdesign/room1.gif" alt="Portfolio Image 4">
+                <video src="https://hc3202.cafe24.com/hc3202_a5d8d7811df3cc8178554c9f41ca2b33_SD.mp4" autoplay loop muted playsinline></video>
                 <div class="portfolio-content">
                     <a href="portfolio4.html" target="_blank">자세히 보기</a>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="number-box">5번</div>
-                <img src="http://harrange.negagea.kr/nvdesign/room2.gif" alt="Portfolio Image 5">
+                <video src="https://hc3202.cafe24.com/hc3202_3b161a44504ac43658f9e991429314ed_SD.mp4" autoplay loop muted playsinline></video>
                 <div class="portfolio-content">
                     <a href="portfolio5.html" target="_blank">자세히 보기</a>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="number-box">6번</div>
-                <img src="http://harrange.negagea.kr/nvdesign/room3.gif" alt="Portfolio Image 6">
+                <video src="https://hc3202.cafe24.com/hc3202_c68e2e285c6db1b500e4476530b290f3_SD.mp4" autoplay loop muted playsinline></video>
                 <div class="portfolio-content">
                     <a href="portfolio6.html" target="_blank">자세히 보기</a>
                 </div>
             </div>
             <div class="portfolio-item">
-    <div class="number-box">7번</div>
-    <img src="http://harrange.negagea.kr/nvdesign/room4.gif" alt="Portfolio Image 7">
-    <div class="portfolio-content">
-        <a href="portfolio7.html" target="_blank">자세히 보기</a>
-    </div>
-</div>
-<div class="portfolio-item">
-    <div class="number-box">8번</div>
-    <img src="http://harrange.negagea.kr/nvdesign/room5.gif" alt="Portfolio Image 8">
-    <div class="portfolio-content">
-        <a href="portfolio8.html" target="_blank">자세히 보기</a>
-    </div>
-</div>
-<div class="portfolio-item">
-    <div class="number-box">9번</div>
-    <img src="http://harrange.negagea.kr/nvdesign/massage3.gif" alt="Portfolio Image 9">
-    <div class="portfolio-content">
-        <a href="portfolio9.html" target="_blank">자세히 보기</a>
-    </div>
-</div>
-
-
-
-
-                </section>
+                <div class="number-box">7번</div>
+                <video src="https://hc3202.cafe24.com/hc3202_2fcc47cfdd7a91829fd0053d60bfc95b_SD.mp4" autoplay loop muted playsinline></video>
+                <div class="portfolio-content">
+                    <a href="portfolio7.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">8번</div>
+                <video src="https://hc3202.cafe24.com/hc3202_1160f3f59a15f8af9e544be6d180a855_SD.mp4" autoplay loop muted playsinline></video>
+                <div class="portfolio-content">
+                    <a href="portfolio8.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">9번</div>
+                <video src="https://hc3202.cafe24.com/hc3202_773c605b9ee6d4ccdaaaf6df266de2b3_SD.mp4" autoplay loop muted playsinline></video>
+                <div class="portfolio-content">
+                    <a href="portfolio9.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Premium Portfolio Section -->
     <section class="portfolio-section">
@@ -225,7 +235,7 @@
             * 포트폴리오 외에도 원하시는 스타일로 제작 가능합니다
         </div>
         <div class="portfolio-container">
-            <!-- Portfolio Items 16~30 for Premium Section -->
+            <!-- Portfolio Items 1 to 15 with images -->
             <div class="portfolio-item">
                 <div class="number-box">1번</div>
                 <img src="http://harrange.negagea.kr/sky01/1.gif" alt="Portfolio Image 16">
@@ -336,3 +346,5 @@
 
 </body>
 </html>
+
+
