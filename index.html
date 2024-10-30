@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NV디자인 Sample</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            padding: 50px 20px;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio-section h2 {
+            font-size: 26px;
+            color: #e74c3c;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .portfolio-info {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0 30px 0;
+            max-width: 800px;
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px 15px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        .portfolio-item {
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 3 / 4; /* 세로 비율을 길게 설정 */
+            display: block;
+        }
+
+        .portfolio-content {
+            padding: 15px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .portfolio-content a {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 8px 16px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .portfolio-content a:hover {
+            background-color: #c0392b;
+        }
+
+        /* Number Box */
+        .number-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 3px;
+        }
+
+        /* Responsive Adjustments for Mobile */
+        @media (max-width: 768px) {
+            .portfolio-container {
+                grid-template-columns: repeat(2, 1fr); /* 모바일에서 2열로 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>NV디자인 Sample</h1>
+    </header>
+
+    <!-- Basic Portfolio Section -->
+    <section class="portfolio-section">
+        <h2>NV디자인만의 ai움짤</h2>
+        <div class="portfolio-info">
+            가게상호/이름 들어간 리얼한 동영상으로 홍보효과를 극대화 해보세요 <br>
+            * 움짤은 추가비용 발생 할 수 있습니다. 별도 문의주세요
+        </div>
+        <div class="portfolio-container">
+            <!-- Portfolio Item 1 with Red Box Number and no title above button -->
+            <div class="portfolio-item">
+                <div class="number-box">1번</div>
+                <img src="http://harrange.negagea.kr/nvdesign/title.gif" alt="Portfolio Image 1">
+                <div class="portfolio-content">
+                    <a href="portfolio1.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">2번</div>
+                <img src="http://harrange.negagea.kr/nvdesign/massage1.gif" alt="Portfolio Image 2">
+                <div class="portfolio-content">
+                    <a href="portfolio2.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">3번</div>
+                <img src="http://harrange.negagea.kr/nvdesign/massage2.gif" alt="Portfolio Image 3">
+                <div class="portfolio-content">
+                    <a href="portfolio3.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">4번</div>
+                <img src="http://harrange.negagea.kr/nvdesign/room1.gif" alt="Portfolio Image 4">
+                <div class="portfolio-content">
+                    <a href="portfolio4.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">5번</div>
+                <img src="http://harrange.negagea.kr/nvdesign/room2.gif" alt="Portfolio Image 5">
+                <div class="portfolio-content">
+                    <a href="portfolio5.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">6번</div>
+                <img src="http://harrange.negagea.kr/nvdesign/room3.gif" alt="Portfolio Image 6">
+                <div class="portfolio-content">
+                    <a href="portfolio6.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+    <div class="number-box">7번</div>
+    <img src="http://harrange.negagea.kr/nvdesign/room4.gif" alt="Portfolio Image 7">
+    <div class="portfolio-content">
+        <a href="portfolio7.html" target="_blank">자세히 보기</a>
+    </div>
+</div>
+<div class="portfolio-item">
+    <div class="number-box">8번</div>
+    <img src="http://harrange.negagea.kr/nvdesign/room5.gif" alt="Portfolio Image 8">
+    <div class="portfolio-content">
+        <a href="portfolio8.html" target="_blank">자세히 보기</a>
+    </div>
+</div>
+<div class="portfolio-item">
+    <div class="number-box">9번</div>
+    <img src="http://harrange.negagea.kr/nvdesign/massage3.gif" alt="Portfolio Image 9">
+    <div class="portfolio-content">
+        <a href="portfolio9.html" target="_blank">자세히 보기</a>
+    </div>
+</div>
+
+
+
+
+                </section>
+
+    <!-- Premium Portfolio Section -->
+    <section class="portfolio-section">
+        <h2>NV디자인 맞춤형 프로필</h2>
+        <div class="portfolio-info">
+            * 룸 노래방 기본구성 : 메인 + 연락처 + 인사 + 주대 +이벤트 + 멘트2컷 <br>
+            * 마사지 출장 기타 기본구성 : 메인이미지 + 코스 + 이벤트 + 주의사항 + 전화번호 + 프로필 5명 기준. <br>
+            * 기본 구성 외 추가페이지는 추가비용이 발생 할 수 있습니다. <br>
+            * 포트폴리오 외에도 원하시는 스타일로 제작 가능합니다
+        </div>
+        <div class="portfolio-container">
+            <!-- Portfolio Items 16~30 for Premium Section -->
+            <div class="portfolio-item">
+                <div class="number-box">1번</div>
+                <img src="http://harrange.negagea.kr/sky01/1.gif" alt="Portfolio Image 16">
+                <div class="portfolio-content">
+                    <a href="portfolio16.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">2번</div>
+                <img src="http://harrange.negagea.kr/hwang/1.gif" alt="Portfolio Image 17">
+                <div class="portfolio-content">
+                    <a href="portfolio17.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">3번</div>
+                <img src="http://harrange.negagea.kr/yummy/1.gif" alt="Portfolio Image 18">
+                <div class="portfolio-content">
+                    <a href="portfolio18.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">4번</div>
+                <img src="http://harrange.negagea.kr/misul/1.gif" alt="Portfolio Image 19">
+                <div class="portfolio-content">
+                    <a href="portfolio19.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">5번</div>
+                <img src="http://harrange.negagea.kr/rina1/1.gif" alt="Portfolio Image 20">
+                <div class="portfolio-content">
+                    <a href="portfolio20.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">6번</div>
+                <img src="http://harrange.negagea.kr/bong/1-1.gif" alt="Portfolio Image 21">
+                <div class="portfolio-content">
+                    <a href="portfolio21.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">7번</div>
+                <img src="http://harrange.negagea.kr/fact/1.gif" alt="Portfolio Image 22">
+                <div class="portfolio-content">
+                    <a href="portfolio22.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">8번</div>
+                <img src="http://harrange.negagea.kr/porsche/0main.gif" alt="Portfolio Image 23">
+                <div class="portfolio-content">
+                    <a href="portfolio23.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">9번</div>
+                <img src="http://harrange.negagea.kr/angel/1.gif" alt="Portfolio Image 24">
+                <div class="portfolio-content">
+                    <a href="portfolio24.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">10번</div>
+                <img src="http://harrange.negagea.kr/bada/1.gif" alt="Portfolio Image 25">
+                <div class="portfolio-content">
+                    <a href="portfolio25.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">11번</div>
+                <img src="http://harrange.negagea.kr/pretty/1.gif" alt="Portfolio Image 26">
+                <div class="portfolio-content">
+                    <a href="portfolio26.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">12번</div>
+                <img src="http://harrange.negagea.kr/sogae/1.gif" alt="Portfolio Image 27">
+                <div class="portfolio-content">
+                    <a href="portfolio27.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">13번</div>
+                <img src="https://via.placeholder.com/300x200" alt="Portfolio Image 28">
+                <div class="portfolio-content">
+                    <a href="portfolio28.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">14번</div>
+                <img src="https://via.placeholder.com/300x200" alt="Portfolio Image 29">
+                <div class="portfolio-content">
+                    <a href="portfolio29.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="number-box">15번</div>
+                <img src="https://via.placeholder.com/300x200" alt="Portfolio Image 30">
+                <div class="portfolio-content">
+                    <a href="portfolio30.html" target="_blank">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
